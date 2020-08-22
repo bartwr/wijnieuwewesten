@@ -1,8 +1,15 @@
-import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-import { App } from '/imports/ui/App';
+import '../lib/router.js';
 
-Meteor.startup(() => {
-  render(<App/>, document.getElementById('react-target'));
-});
+// Accounts.onLoginFromLink(function(err, response){
+//   // response is a success object in the form of { userId: docId }
+//   console.log('onLoginFromLink: err/response', err, response)
+//   //
+//   if(err) {
+//     console.log(err)
+//     return err;
+//   }
+
+//   Meteor.call('onboarding.populateUserVids', response.user._id)
+//   document.location = '/';
+// })
