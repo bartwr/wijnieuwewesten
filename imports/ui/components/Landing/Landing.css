@@ -1,3 +1,9 @@
 .Landing {
-  font-size: calc(16vh);
+  font-size: calc(14vh);
+}
+
+@media(min-width: 480px) {
+  .Landing {
+    font-size: calc(16vh);
+  }
 }
