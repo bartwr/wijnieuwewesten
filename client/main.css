@@ -1,3 +1,7 @@
+:root {
+  --animate-delay: 0.5s;
+}
+
 html, body {
   margin: 0;
   padding: 0 !important;
