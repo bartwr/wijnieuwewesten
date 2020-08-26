@@ -5,6 +5,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 // import { Proefabonnees } from '/imports/models/Proefabonnees.js';
 
 // Import components
+import SuperNav from '../SuperNav/SuperNav.jsx'
 import SideNavigation from '../SideNavigation/SideNavigation.jsx'
 import TopNavigation from '../TopNavigation/TopNavigation.jsx'
 import BottomNavigation from '../BottomNavigation/BottomNavigation.jsx'
@@ -33,20 +34,23 @@ class App extends Component {
 
   render() {
     return (
-      <div className="flex flex-col h-full">
-        <div>
-          <SideNavigation>
-            <TopNavigation />
-          </SideNavigation>
+      <div className="h-full">
+        <div className="flex flex-col h-full">
+          <div>
+            <SideNavigation>
+              <TopNavigation />
+            </SideNavigation>
+          </div>
+          <div className="flex-1 overflow-hidden">
+            {this.renderComponent()}
+          </div>
+          <div>
+            <SideNavigation>
+              <BottomNavigation />
+            </SideNavigation>
+          </div>
         </div>
-        <div className="flex-1 overflow-hidden">
-          {this.renderComponent()}
-        </div>
-        <div>
-          <SideNavigation>
-            <BottomNavigation />
-          </SideNavigation>
-        </div>
+        <SuperNav />
       </div>
     )
   }

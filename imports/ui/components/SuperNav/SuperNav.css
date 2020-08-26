@@ -1,0 +1,10 @@
+.SuperNav {
+  right: 1.5em;
+  bottom: 70px;
+  left: 1.5em;
+  z-index: 1000;
+}
+
+.SuperNav-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
