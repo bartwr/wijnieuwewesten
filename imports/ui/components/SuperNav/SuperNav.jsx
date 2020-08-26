@@ -30,8 +30,19 @@ class SuperNav extends Component {
             font-bold
             text-white
           ">
-            <a href="/nieuw" onClick={() => FlowRouter.go('/nieuw')}>
+            <a
+              href="/nieuw"
+              onClick={() => FlowRouter.go('/nieuw')}
+              className="block py-4 border-b border-white"
+              >
               voeg iets toe
+            </a>
+            <a
+              href="https://www.bartroorda.nl/contact"
+              target="_blank"
+              className="block py-4"
+              >
+              contact
             </a>
           </nav>
         </div>}
