@@ -11,7 +11,7 @@ import { Meteor } from 'meteor/meteor';
 // // Import schedules jobs
 // import '/imports/server/jobs/index.js';
 // // Import methods
-// import '/imports/server/methods/index.js';
+import '/imports/server/methods/index.js';
 
 function configureEmail() {
   var username = process.env.MAILGUN_USERNAME;
