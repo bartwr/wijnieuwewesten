@@ -2,12 +2,12 @@ import { Meteor } from 'meteor/meteor';
 
 // import './api/mollie-webhooks.ts'
 
-// import './login/find-user-by-token.js';
-// import './login/login-config.js';
-// import './login/send-login-email.js';
+import './login/find-user-by-token.js';
+import './login/login-config.js';
+import './login/send-login-email.js';
 
 // // Import publications
-// import '/imports/server/publish/all.js';
+import '/imports/server/publish/index.js';
 // // Import schedules jobs
 // import '/imports/server/jobs/index.js';
 // // Import methods

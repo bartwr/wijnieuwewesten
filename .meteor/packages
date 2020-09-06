@@ -23,3 +23,7 @@ react-meteor-data       # React higher-order component for reactively tracking M
 littledata:synced-cron
 ostrio:flow-router-meta
 kadira:flow-router
+accounts-base
+accounts-password
+email
+random

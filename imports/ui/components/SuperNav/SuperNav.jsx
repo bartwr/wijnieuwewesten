@@ -23,7 +23,9 @@ class SuperNav extends Component {
         {this.props.showNav !== undefined && <div className="
           SuperNav-overlay
           p-2
+          mx-auto
           mb-4
+          max-w-sm
         ">
           <nav className="
             SuperNav-nav
@@ -42,7 +44,7 @@ class SuperNav extends Component {
               target="_blank"
               className="block py-4"
               >
-              contact
+              contact ↗️
             </a>
           </nav>
         </div>}

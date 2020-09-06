@@ -8,7 +8,12 @@ class BottomNavigation extends Component {
 
   }
   render() {
-    return <div className="BottomNavigation">
+    return <div
+      className="BottomNavigation"
+      onClick={() => {
+        FlowRouter.go('/a')
+      }}
+      >
       ⬇️ Tekst
     </div>
   }

@@ -23,6 +23,10 @@ class Admin extends Component {
     })
   }
   render() {
+    console.log(this.props.user)
+    if(! this.props.user || ! this.props.user.emails[0] || this.props.user.emails[0].address != 'mail@bartroorda.nl')
+      return <div className="p-4">Please log in as admin</div>
+
     return <div className="Admin p-4">
 
       <h1 className="text-2xl">Alle tags</h1>
@@ -50,6 +54,7 @@ class Admin extends Component {
 
 export default withTracker((props) => {
   return {
-    tags: Tags.find({}, {sort: { 'title': 1 }}).fetch()
+    tags: Tags.find({}, {sort: { 'title': 1 }}).fetch(),
+    user: Meteor.user()
   }
 })(Admin);

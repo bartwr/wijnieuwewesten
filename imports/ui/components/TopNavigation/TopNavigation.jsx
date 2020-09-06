@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { withTracker } from 'meteor/react-meteor-data';
 
 class TopNavigation extends Component {
   constructor(props) {
@@ -8,14 +9,24 @@ class TopNavigation extends Component {
 
   }
   render() {
-    return <div className="
+    console.log(window.location.pathname);
+
+    return <a className="
       TopNavigation
-    ">
+      block
+    "
+    href="/kaart"
+    onClick={() => {
+      FlowRouter.go('/kaart')
+    }}>
       <div>
         ⬆️ Kaart<br />
       </div>
-    </div>
+    </a>
   }
 }
 
-export default TopNavigation;
+export default withTracker((props) => {
+  return {
+  }
+})(TopNavigation);

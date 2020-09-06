@@ -1,4 +1,8 @@
-.leaflet-container {
+.Map {
+  height: 100%;
+}
+
+.Map .leaflet-container {
   height: 100%;
   width: 100%;
 }

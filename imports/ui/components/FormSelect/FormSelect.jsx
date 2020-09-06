@@ -21,6 +21,7 @@ class FormSelect extends Component {
         leading-normal
       "
       name={this.props.name}
+      onChange={this.props.onChange}
       >
         {this.props.children}
       </select>

@@ -36,15 +36,17 @@ class App extends Component {
     return (
       <div className="h-full">
         <div className="flex flex-col h-full">
-          <div>
+          <div hidden={window.location.pathname == '/kaart'}>
             <SideNavigation>
               <TopNavigation />
             </SideNavigation>
           </div>
           <div className="flex-1 overflow-hidden">
-            {this.renderComponent()}
+            <div className="h-full overflow-y-auto">
+              {this.renderComponent()}
+            </div>
           </div>
-          <div>
+          <div hidden={window.location.pathname == '/a'}>
             <SideNavigation>
               <BottomNavigation />
             </SideNavigation>
